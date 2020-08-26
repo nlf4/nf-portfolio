@@ -1,0 +1,319 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    overflow-x: hidden;
+}
+
+p#name-header {
+    font-size: 50px;
+}
+
+section#section-dev {
+    min-height: 400px;
+}
+
+/* section backgrounds ***********/
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.pimg1 {
+    background-image: url('./img/stand.jpg');
+    min-height: 100%;
+    display: flex;
+    
+}
+
+.pimg2 {
+    background-image: url('./img/sunsetsm2.jpg');
+    min-height: 500px;
+    
+}
+
+.pimg3 {
+    background-image: url('./img/stone.jpg');
+    min-height: 500px;
+    
+}
+
+.pimg4 {
+    background-image: url('./img/black.png');
+    min-height: 500px;
+    
+}
+
+/* sections **********************/
+
+.section {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 30px 60px;
+}
+.section h2 {
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+.section-light {
+    background-color: #dce5ec;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #dce5ec;
+    color: #666;
+    line-height: 32px;
+
+}
+
+.section-art {
+    min-height: 520px;
+}
+
+/* dev icons *************/
+
+#icons img {
+    transition: .3s;
+    padding: 15px;
+    filter: grayscale(50%)
+    
+}
+
+#icons img:hover {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+
+}
+
+.ptext {
+    position: absolute;
+    top: 30%;
+    padding-left: 80px;
+    width: 100%;
+    color: rgba(20, 20, 20, 0.973);
+    font-size: 38px;
+    letter-spacing: 7px;
+}
+
+/* translation section ***********/
+.list-translation {
+    margin-top: 0;
+    list-style: none;
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+}
+
+.list-translation li {
+    position: relative;
+    display: block;
+    padding: 10px;
+    /* animation: fadeIn 0.5s linear;
+    animation-fill-mode: both; */
+}
+
+/* // Set delay per List Item
+@for $i from 1 through $total-items {
+  li:nth-child(#{$i}) {
+    animation-delay: .25s * $i;
+  }
+}
+
+// Keyframe animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.list-translation li::before {
+        content: "✒️";
+        font-weight: bold;
+        display: inline-block; 
+        width: 1.5em;
+        /* margin-left: -1em; */
+}
+
+.list-translation li {
+    font-size: 20px;
+}
+
+
+.endtext {
+    position: absolute;
+    top: 30%;
+    padding-left: 120px;
+    width: 100%;
+    color: rgb(231, 223, 223);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.endtext:hover {
+    color: #414446;
+    text-decoration: none;
+}
+
+/* art gallery *********************/
+
+.gal-img {
+    height: 200px;
+    width: auto;
+    color: #6e7d8d;
+    box-shadow: rgb(184, 179, 179) 0 5px 10px;
+    margin: 25px 50px 15px 15px;
+    
+
+}
+
+.row-1 img {
+    transition: 1s;
+}
+
+.row-1 .gal-img:hover {
+    transform: scale(1.1);
+}
+.gal-img:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* contact section *******************/
+
+.endtext-box {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 600px;
+    background-color: rgb(116, 114, 114);
+    opacity: 0.6;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.endtext-box p {
+    margin-left: 80px;
+    font-size: 21px;
+    /* top: 50%;
+    margin-top: 31px;
+    width: 100%; */
+    color: rgb(231, 223, 223);
+    text-decoration: none;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    
+}
+.endtext2 {
+    /* top: 50%;
+    margin-top: 60px;
+    width: 100%; */
+    color: rgb(231, 223, 223);
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+img#portrait {
+    height: 250px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    border: 5px solid #333333;
+    opacity: 1;
+    z-index: 999;
+}
+
+/* social media links *******************/
+
+ul.list-unstyled {
+    margin-top: 150px;
+    list-style: none;
+}
+
+ul.list-unstyled li {
+    display: inline;
+    font-size: 2em;
+    padding: 0 .2em;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+ul.list-unstyled a {
+    color: rgb(231, 223, 223);
+    transition: all 300ms ease;
+}
+
+ul.list-unstyled a:hover {
+    color: rgb(229, 238, 68);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(41, 36, 36);
+    height: 0px;
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}

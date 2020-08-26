@@ -1,38 +1,446 @@
-.App {
-  text-align: center;
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgb(199, 194, 194);
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p#name-header {
+    font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+section#section-dev {
+    min-height: 400px;
+    padding: 50px;
+}
+
+/* section backgrounds ***********/
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.pimg1 {
+    background-image: url('./img/1stand.jpg');
+    /* min-height: 100%; */
+    height: 100vh;
+    display: flex;
+    
+}
+
+.pimg2 {
+    background-image: url('./img/bg-1.jpg');
+    min-height: 500px;
+    
+}
+
+.pimg3 {
+    background-image: url('./img/bg-2.jpg');
+    min-height: 500px;
+    
+}
+
+.pimg4 {
+    background-image: url('./img/black.png');
+    min-height: 500px;
+    
+}
+
+/* sections **********************/
+
+.section {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    padding: 30px 60px;
+}
+.section h2 {
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+
+.section-light {
+    background-color: #615e66;
+    color: rgb(187, 186, 186);
+}
+
+.section-dark {
+    background-color: #615e66;
+    color: rgb(187, 186, 186);
+    line-height: 32px;
+
+}
+
+#section-dev {
+  line-height: 2em;
+}
+
+.section-art {
+    min-height: 520px;
+}
+
+/* dev icons *************/
+
+#icons {
+  padding-bottom: 4rem;
+  
+    /* height: 200px;
+    transition: .3s;
+    padding: 15px;
+    filter: grayscale(50%) */
+    
+}
+
+
+.tech-icon {
+  font-size: 50px;
+  transition: .3s;
+  padding: 15px;
+  filter: grayscale(50%)
+}
+
+#css-icon {
+  font-size: 50px;
+  color: #0274B8;
+  transition: .3s;
+  padding: 15px;
+  filter: grayscale(50%)
+}
+
+#css-icon:hover {
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
+#html-icon {
+  color: #E04A17;
+}
+#js-icon {
+  color: #E9D44E;
+}
+#node-icon {
+  color: #539F43;
+}
+#php-icon {
+  color: #7981f8;
+}
+#react-icon {
+  color: #58D4F6;
+}
+
+.tech-icon:hover {
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
+.ptext {
+    position: absolute;
+    top: 30%;
+    padding-left: 80px;
+    width: 100%;
+    color: rgba(20, 20, 20, 0.973);
+    font-size: 38px;
+    letter-spacing: 7px;
+}
+
+/* translation section ***********/
+.list-translation {
+    margin-top: 0;
+    list-style: none;
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+}
+
+.list-translation li {
+    position: relative;
+    display: block;
+    padding: 10px;
+    /* animation: fadeIn 0.5s linear;
+    animation-fill-mode: both; */
+}
+
+/* // Set delay per List Item
+@for $i from 1 through $total-items {
+  li:nth-child(#{$i}) {
+    animation-delay: .25s * $i;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+// Keyframe animation
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  75% {
+    opacity: 0.5;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.list-translation li::before {
+        content: "✒️";
+        font-weight: bold;
+        display: inline-block; 
+        width: 1.5em;
+        /* margin-left: -1em; */
+}
+
+.list-translation li {
+    font-size: 20px;
+}
+
+
+.endtext {
+    position: absolute;
+    top: 30%;
+    padding-left: 120px;
+    width: 100%;
+    color: rgb(231, 223, 223);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.endtext:hover {
+    color: #414446;
+    text-decoration: none;
+}
+
+
+
+#projects-title, #intro-title {
+  font-size: 3.5rem;
+  padding-top: 1rem;
+}
+
+
+div.project {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px #a1bde4;
+  margin: 50px 200px;
+  background-color: #615e66;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.project-left {
+  width: 600px;
+  height: 300px;
+  /* border: solid 1px red; */
+  text-decoration: none;
+  padding: 1.2rem;
+}
+
+.project-left a {
+  text-decoration: none;
+  color: rgb(187, 186, 186);
+  border: 1px solid #a1bde4;
+  padding: 8px 12px;
+  border-radius: 10%;
+  transition: .3s;
+}
+
+.project-left a:hover {
+  background-color: #a1bde4;
+  color: #615e66;
+  
+}
+
+.project-right {
+  height: 300px;
+  width: 600px;
+  /* border: solid 1px blue; */
+  display: flex;
+  padding: 1.2rem;
+
+}
+
+#projects-div {
+  font-size: 1.2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#colloq-preview, #getfit-preview {
+  margin: auto;
+  align-self: center;
+  max-width: 30rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* art gallery *********************/
+
+.image-gallery-icon, button, svg { 
+  height: 50px;
+  width: 50px;
+  font-size: 15px;
+  transition: .3s;
+  filter: grayscale(30%)
+}
+
+svg:hover {
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
+.gal-img {
+    height: 200px;
+    width: auto;
+    color: #6e7d8d;
+    box-shadow: rgb(184, 179, 179) 0 5px 10px;
+    margin: 25px 50px 15px 15px;
+    
+
+}
+
+.row-1 img {
+    transition: 1s;
+}
+
+.row-1 .gal-img:hover {
+    transform: scale(1.1);
+}
+.gal-img:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* contact section *******************/
+
+.endtext-box {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 31%;
+    background-color: #615e66;
+    opacity: 0.6;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.endtext-box p {
+    margin-left: 80px;
+    font-size: 21px;
+    /* top: 50%;
+    margin-top: 31px;
+    width: 100%; */
+    color: rgb(231, 223, 223);
+    text-decoration: none;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    
+}
+.endtext2 {
+    /* top: 50%;
+    margin-top: 60px;
+    width: 100%; */
+    color: rgb(231, 223, 223);
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.endtext-box img#portrait {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    border-radius: 50%;
+    border: 5px solid #333333;
+    opacity: 1;
+    z-index: 999;
+}
+
+/* social media links *******************/
+
+ul.list-unstyled {
+    margin-top: 150px;
+    list-style: none;
+    margin-right: .4rem;
+}
+
+ul.list-unstyled li {
+    display: inline;
+    font-size: 2.5em;
+    padding: 0 .2em;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+ul.list-unstyled a {
+    color: rgb(231, 223, 223);
+    transition: all 300ms ease;
+}
+
+ul.list-unstyled a:hover {
+    color: rgb(229, 238, 68);
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(41, 36, 36);
+    height: 0px;
+}
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
