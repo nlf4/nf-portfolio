@@ -98,7 +98,8 @@ section#section-dev {
 /* dev icons *************/
 
 #icons {
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
+  padding-top: 1rem;
   
     /* height: 200px;
     transition: .3s;
@@ -110,6 +111,23 @@ section#section-dev {
 
 .tech-icon {
   font-size: 50px;
+  transition: .3s;
+  padding: 15px;
+  filter: grayscale(50%)
+}
+
+.tech-icon svg {
+  transition: .3s;
+  filter: grayscale(20%)
+}
+
+.tech-icon svg:hover {
+  transform: scale(1.5);
+  filter: grayscale(0%);
+}
+
+.tech-icon-project svg{
+  height: 20px;
   transition: .3s;
   padding: 15px;
   filter: grayscale(50%)
@@ -235,7 +253,7 @@ section#section-dev {
 
 
 div.project {
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -255,6 +273,14 @@ div.project {
   padding: 1.2rem;
 }
 
+.project-left p {
+  margin-top: 0;
+}
+
+.project-left h2 {
+  margin-top: 0;
+}
+
 .project-left a {
   text-decoration: none;
   color: rgb(187, 186, 186);
@@ -262,12 +288,27 @@ div.project {
   padding: 8px 12px;
   border-radius: 10%;
   transition: .3s;
+  margin-right: 18px;
 }
 
 .project-left a:hover {
   background-color: #a1bde4;
   color: #615e66;
   
+}
+
+.project-buttons {
+  margin-top: 3rem;
+}
+
+.project-left svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+.project-left svg:hover {
+  transform: scale(1);
+  filter: grayscale(0%);
 }
 
 .project-right {
@@ -291,54 +332,41 @@ div.project {
   max-width: 30rem;
 }
 
+/*  slideshow ********************/
 
-/* art gallery *********************/
-
-.image-gallery-icon, button, svg { 
-  height: 50px;
-  width: 50px;
-  font-size: 15px;
-  transition: .3s;
-  filter: grayscale(30%)
+div.react-slideshow-container {
+  width: 600px;
+}
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
 }
 
-svg:hover {
-  transform: scale(1.5);
-  filter: grayscale(0%);
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }
 
-.gal-img {
-    height: 200px;
-    width: auto;
-    color: #6e7d8d;
-    box-shadow: rgb(184, 179, 179) 0 5px 10px;
-    margin: 25px 50px 15px 15px;
-    
-
+img#movie-search {
+  width: 600px;
 }
 
-.row-1 img {
-    transition: 1s;
-}
-
-.row-1 .gal-img:hover {
-    transform: scale(1.1);
-}
-.gal-img:hover {
-    -webkit-filter: brightness(60%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
 
 /* contact section *******************/
+
+span.color {
+  color: rgb(60, 219, 12);
+}
 
 .endtext-box {
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    width: 31%;
+    width: 38%;
     background-color: #615e66;
     opacity: 0.6;
     color: #ddd;
@@ -353,12 +381,12 @@ svg:hover {
 }
 
 .endtext-box p {
-    margin-left: 80px;
+    margin-left: 100px;
     font-size: 21px;
     /* top: 50%;
     margin-top: 31px;
     width: 100%; */
-    color: rgb(231, 223, 223);
+    color: rgb(250, 246, 246);
     text-decoration: none;
     justify-content: center;
     width: 70%;
@@ -377,7 +405,7 @@ svg:hover {
 }
 
 .endtext-box img#portrait {
-    height: 250px;
+    height: 280px;
     width: 250px;
     margin-bottom: 40px;
     margin-top: 35px;
@@ -409,7 +437,7 @@ ul.list-unstyled a {
 }
 
 ul.list-unstyled a:hover {
-    color: rgb(229, 238, 68);
+    color: rgb(60, 219, 12);
 }
 
 footer {

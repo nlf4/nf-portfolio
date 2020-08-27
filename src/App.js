@@ -1,26 +1,32 @@
 import React from 'react';
-import { FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact } from 'react-icons/fa';
-// import './style.css';
+import { FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSymfony, FaCode } from 'react-icons/fa';
 import './App.css';
 import { GrMysql } from "react-icons/gr";
-import ImageGallery from 'react-image-gallery';
+// import { BiWorld } from "react-icons/bi"
+import 'react-slideshow-image/dist/styles.css'
+import { Slide } from 'react-slideshow-image';
 
 function App() {
 
-  const images = [
-    {
-      original: require('./img/ingridsm.jpg'),
-      thumbnail: require('./img/ingridsm.jpg'),
-    },
-    {
-      original: require('./img/kettlesm.jpg'),
-      thumbnail: require('./img/kettlesm.jpg'),
-    },
-    {
-      original: require('./img/johnsm.jpg'),
-      thumbnail: require('./img/johnsm.jpg'),
-    },
-  ];
+   
+    const slideImages = [
+        require('./img/colloq-preview.JPG'),
+        require('./img/colloq-inbox.JPG'),
+        require('./img/colloq-calendar.JPG')
+    ];
+
+    const slideImages2 = [
+        require('./img/getfit.png'),
+        require('./img/options-menu5.jpg'),
+    ];
+
+
+    const properties = {
+        autoplay: false,
+      };
+   
+
+ 
 
   return (
     <div>
@@ -68,28 +74,102 @@ function App() {
 
                 <div class="project-left">
                     <h2>Colloq App</h2>
-                    
+                    <div id="project-icons">
+                        <span className="tech-icon-project" id="php-icon"><FaSymfony /></span>
+                        <span className="tech-icon-project" id="react-icon"><FaReact /></span>
+                        <span className="tech-icon-project" id="mysql-icon"><GrMysql /></span>
+                    </div>
                     <p>Colloq is a social networking app for travellers who are also interested in improving a language. After creating a profile, users can search their destination city to find local native speakers and message them to arrange a meet-up.</p>
-                    <a href="https://colloq.surge.sh" target="_blank">View</a>
+                    <a href="https://colloq.surge.sh" target="_blank">Live</a>
+                    <a href="https://github.com/nlf4/colloq-frontend" target="_blank">Code</a>
                 </div>
 
                 <div class="project-right">
-                    <img id="colloq-preview" alt="Colloq App" src={require('./img/colloq-preview.JPG')}/>
+
+                <div>
+                    <Slide easing="ease" {...properties}>
+                    <div className="each-slide">
+                        <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+                        
+                        </div>
+                    </div>
+                    <div className="each-slide">
+                        <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+                        
+                        </div>
+                    </div>
+                    <div className="each-slide">
+                        <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+                        
+                        </div>
+                    </div>
+                    </Slide>
                 </div>
+
+                </div>
+                
+                             
 
             </div>
             
             <div class="project">
 
-                <div class="project-left">
+                <div id="project-left-two" class="project-left">
                     <h2>GetFit App</h2>
+                    <div id="project-icons">
+                        <span className="tech-icon-project" id="php-icon"><FaPhp /></span>
+                        <span className="tech-icon-project" id="mysql-icon"><GrMysql /></span>
+                    </div>
+                    <p>GetfiT is a fitness web application where users can utilize basic CRUD functions to store, access, update and delete workout exercises.</p>
+                    <div class="project-buttons">
+                    <a href="https://wdev.be/wdev_nicole/dag2/login.php" target="_blank">Live</a>
+                    <a href="https://github.com/nlf4/getfit" target="_blank">Code</a>
+                    </div>
                     
-                    <p>GetfiT PHP/MySQL fitness web application project for the PHP1 module at Syntra.</p>
-                    <a href="https://wdev.be/wdev_nicole/dag2/login.php" target="_blank">View</a>
                 </div>
 
                 <div class="project-right">
-                    <img id="getfit-preview" alt="GetFit App" src={require('./img/getfit-preview.JPG')}/>   
+
+                <div>
+                    <Slide easing="ease" {...properties}>
+                    <div className="each-slide">
+                        <div style={{'backgroundImage': `url(${slideImages2[0]})`}}>
+                        
+                        </div>
+                    </div>
+                    <div className="each-slide">
+                        <div style={{'backgroundImage': `url(${slideImages2[1]})`}}>
+                        
+                        </div>
+                    </div>
+                    </Slide>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <div id="project-left-two" class="project-left">
+                    <h2>Movie Search</h2>
+                    <div id="project-icons">
+                    <span className="tech-icon-project" id="react-icon"><FaReact /></span>
+                    </div>
+                    <p>An app which lets users search films and add them to their favorites collection. Built using OMDb API, React Redux and Material-UI.</p>
+                    <div class="project-buttons">
+                    <a href="http://movie-search-redux.surge.sh/" target="_blank">Live</a>
+                    <a href="https://github.com/nlf4/redux-movie-liker" target="_blank">Code</a>
+                    </div>
+                    
+                </div>
+
+                <div class="project-right">
+
+                <div>
+                <img id="movie-search" alt="Movie Search App" src={require('./img/movie-search.JPG')}/>
+                </div>
+
                 </div>
 
             </div>
@@ -110,40 +190,16 @@ function App() {
         </div>
     </div>
 
-    {/* <section className="section section-light section-art">
-        <h2>Artist</h2>
-        <p>Check out my gallery for photos, drawings, and oil paintings.</p>
-        <div className="images">
-            <div className="row-1">
-            return <ImageGallery items={images} />; */}
-                   {/* <a className="fancybox-button gal-img" rel="fancybox-button" href="#" title="Ingrid Bergman">
-                        <img src="./img/ingrid.jpg" alt="ingrid bergman drawing" />
-                    </a>
-                    <a className="fancybox-button gal-img" rel="fancybox-button" href="https://www.flickr.com/photos/171530059@N03/46966540105/in/dateposted-public/lightbox/" title="Kettle">
-                        <img src="./img/kettle.JPG" alt="kettle painting" />
-                    </a>
-                    <a className="fancybox-button gal-img" rel="fancybox-button" href="#" title="John">
-                        <img src="./img/john.JPG" alt="arizona photo" /> 
-                    </a>
-            
-                    <a href="./img/ingrid.jpg" data-lightbox="mygallery" data-title="Ingrid Bergman"><img className="gal-img" src="./img/ingridsm.jpg" alt="ingrid bergman drawing" /></a>
-                    <a href="./img/kettle.JPG" data-lightbox="mygallery" data-title="Kettle"><img className="gal-img" src="./img/kettlesm.JPG" alt="kettle painting" /></a>
-                    <a href="./img/john.jpg" data-lightbox="mygallery" data-title="John"><img className="gal-img" src="./img/johnsm.JPG" alt="arizona photo" /></a> */}
-                {/* </div>
-            
-        </div>
-    </section> */}
-
     
         <div className="pimg4">
             <div className="endtext-box">
                 <div id="contact">
-                  {/* <img id="portrait" alt="Nicole Furtado" src={require('./img/nf3.jpg')}/> */}
+                  <img id="portrait" alt="Nicole Furtado" src={require('./img/nf3.jpg')}/>
                   {/* <img id="portrait" alt="Nicole Furtado" src={require('./img/nf3.jpg')}/> */}
                     {/* <img id="portrait" src="./img/1stand.jpg" alt="Nicole Furtado" /> */}
-                        <h1 className="endtext2">Get in touch!</h1>
+                        <h1 className="endtext2">About Me</h1>
                         
-                        <p className="endtext2">Don't hesitate to contact me with your questions or project ideas!</p>
+                        <p className="endtext2">My name is <span class="color">Nicole</span>, I'm a 29-year-old <span class="color">web developer</span> based in Antwerp. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
                         
 
                         <ul className="list-unstyled social">
