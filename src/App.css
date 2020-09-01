@@ -18,6 +18,24 @@ p#name-header {
     font-size: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  p#name-header  {
+    font-size: 1.7rem;
+  }
+  section#section-dev {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  p#name-header  {
+    font-size: 2rem;
+  }
+  section#section-dev {
+    padding: 10px;
+  }
+}
+
 section#section-dev {
     min-height: 400px;
     padding: 50px;
@@ -56,7 +74,8 @@ section#section-dev {
 
 .pimg4 {
     background-image: url('./img/black.png');
-    min-height: 500px;
+    min-height: 100vh;
+    /* border: solid red 1px; */
     
 }
 
@@ -71,8 +90,8 @@ section#section-dev {
 }
 .section h2 {
     font-family: 'Comfortaa', cursive;
-    letter-spacing: 4px;
-    font-size: 40px;
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
 }
 
 .section-light {
@@ -83,7 +102,7 @@ section#section-dev {
 .section-dark {
     background-color: #615e66;
     color: rgb(187, 186, 186);
-    line-height: 32px;
+    line-height: 2rem;
 
 }
 
@@ -91,29 +110,23 @@ section#section-dev {
   line-height: 2em;
 }
 
-.section-art {
+/* .section-art {
     min-height: 520px;
-}
+} */
 
 /* dev icons *************/
 
 #icons {
   padding-bottom: 3.5rem;
-  padding-top: 1rem;
-  
-    /* height: 200px;
-    transition: .3s;
-    padding: 15px;
-    filter: grayscale(50%) */
-    
+  padding-top: 1rem; 
 }
 
 
 .tech-icon {
-  font-size: 50px;
+  font-size: 3rem;
   transition: .3s;
-  padding: 15px;
-  filter: grayscale(50%)
+  padding: 1rem;
+  filter: grayscale(50%);
 }
 
 .tech-icon svg {
@@ -127,14 +140,14 @@ section#section-dev {
 }
 
 .tech-icon-project svg{
-  height: 20px;
+  height: 3rem;
   transition: .3s;
-  padding: 15px;
+  padding: .8rem;
   filter: grayscale(50%)
 }
 
-#css-icon {
-  font-size: 50px;
+/* #css-icon {
+  font-size: 2rem;
   color: #0274B8;
   transition: .3s;
   padding: 15px;
@@ -144,6 +157,10 @@ section#section-dev {
 #css-icon:hover {
   transform: scale(1.5);
   filter: grayscale(0%);
+} */
+
+#css-icon {
+  color: #1a89c9;
 }
 
 #html-icon {
@@ -170,29 +187,40 @@ section#section-dev {
 .ptext {
     position: absolute;
     top: 30%;
-    padding-left: 80px;
+    padding-left: 9rem;
     width: 100%;
     color: rgba(20, 20, 20, 0.973);
     font-size: 38px;
     letter-spacing: 7px;
 }
 
+@media screen and (max-width: 600px) {
+  .ptext {
+    padding-left: 2rem;
+  }
+
+  #icons {
+    line-height: 80px;
+      
+  }
+}
+
 /* translation section ***********/
-.list-translation {
+/* .list-translation {
     margin-top: 0;
     list-style: none;
     list-style-position: inside;
     display: inline-block;
     text-align: left;
-}
+} */
 
-.list-translation li {
+/* .list-translation li {
     position: relative;
     display: block;
-    padding: 10px;
+    padding: 10px; */
     /* animation: fadeIn 0.5s linear;
     animation-fill-mode: both; */
-}
+/* } */
 
 /* // Set delay per List Item
 @for $i from 1 through $total-items {
@@ -216,20 +244,21 @@ section#section-dev {
   }
 } */
 
-.list-translation li::before {
+/* .list-translation li::before {
         content: "✒️";
         font-weight: bold;
         display: inline-block; 
-        width: 1.5em;
+        width: 1.5em; */
         /* margin-left: -1em; */
-}
+/* } */
 
-.list-translation li {
+/* .list-translation li {
     font-size: 20px;
-}
+} */
 
 
-.endtext {
+/* .endtext {
+  border: white 1px solid;
     position: absolute;
     top: 30%;
     padding-left: 120px;
@@ -242,8 +271,7 @@ section#section-dev {
 .endtext:hover {
     color: #414446;
     text-decoration: none;
-}
-
+} */
 
 
 #projects-title, #intro-title {
@@ -251,22 +279,95 @@ section#section-dev {
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  #projects-title, #intro-title {
+    font-size: 2.5rem;
+  }
+}
+
 
 div.project {
-  height: 350px;
+  min-height: 11rem;
+  max-width: 80%;
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   border: solid 1px #a1bde4;
-  margin: 50px 200px;
+  margin: 50px 100px;
   background-color: #615e66;
   border-radius: 10px;
   padding: 20px;
 }
 
+/* MEDIA **********************/
+
+
+
+@media screen and (max-width: 600px) {
+  div.project {
+  font-size: 1rem;
+  margin: 0;
+  min-height: 90vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .section {
+  padding: 10px 0;
+  }
+
+
+  .project-right {
+    min-width: 50%;
+    margin-top: 3rem;
+  }
+
+  .each-slide {
+    height: 16rem;
+    min-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.project {
+  font-size: 1rem;
+  margin: 0;
+  min-height: 90vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  }
+
+  .section {
+  padding: 10px 0;
+  }
+
+
+  .project-right {
+    min-width: 50%;
+  }
+
+  .each-slide {
+    height: 16rem;
+    min-width: 20rem;
+  }
+
+  img#movie-search {
+    width: 400px;
+  }
+}
+
+
+
+
+/* END MEDIA ********************/
+
 .project-left {
-  width: 600px;
+  margin: 0 1rem 0 .8rem;
+  min-width: 50%;
   height: 300px;
   /* border: solid 1px red; */
   text-decoration: none;
@@ -274,7 +375,8 @@ div.project {
 }
 
 .project-left p {
-  margin-top: 0;
+  width: 90%;
+  margin: 0 1rem .8rem 1rem;
 }
 
 .project-left h2 {
@@ -312,13 +414,14 @@ div.project {
 }
 
 .project-right {
-  height: 300px;
-  width: 600px;
+  min-height: 200px;
+  min-width: 50%;
   /* border: solid 1px blue; */
   display: flex;
+  justify-content: center;
   padding: 1.2rem;
-
 }
+
 
 #projects-div {
   font-size: 1.2rem;
@@ -335,14 +438,15 @@ div.project {
 /*  slideshow ********************/
 
 div.react-slideshow-container {
-  width: 600px;
+  width: 500px;
 }
 .each-slide > div {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 300px;
+  height: 18rem;
+  width: 32rem;
 }
 
 .each-slide span {
@@ -353,7 +457,7 @@ div.react-slideshow-container {
 }
 
 img#movie-search {
-  width: 600px;
+  width: 500px;
 }
 
 
@@ -361,6 +465,13 @@ img#movie-search {
 
 span.color {
   color: rgb(60, 219, 12);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .endtext-box {
@@ -377,28 +488,23 @@ span.color {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
 
 .endtext-box p {
-    margin-left: 100px;
-    font-size: 21px;
-    /* top: 50%;
-    margin-top: 31px;
-    width: 100%; */
+    
+    font-size: 1.3rem;
     color: rgb(250, 246, 246);
     text-decoration: none;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     text-align: center;
+    /* border: solid 1px yellow; */
     
 }
 .endtext2 {
-    /* top: 50%;
-    margin-top: 60px;
-    width: 100%; */
     color: rgb(231, 223, 223);
-    font-size: 30px;
+    font-size: 2rem;
+    margin: .5rem 1rem 1rem 2.5rem;
     text-decoration: none;
     text-align: center;
 
@@ -413,6 +519,35 @@ span.color {
     border: 5px solid #333333;
     opacity: 1;
     z-index: 999;
+}
+
+/* MEDIA ************************/
+@media screen and (max-width: 900px) {
+  .endtext-box {
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.endtext-box img#portrait {
+  height: 10rem;
+  width: 9rem;
+  margin-bottom: 40px;
+  margin-top: 35px;
+}
+
+#contact {
+  
+}
+
+.endtext-box p {
+  width: 80%%;
+}
+
+ul.list-unstyled {
+  margin-top: 0;
+}
 }
 
 /* social media links *******************/
@@ -440,35 +575,5 @@ ul.list-unstyled a:hover {
     color: rgb(60, 219, 12);
 }
 
-footer {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(41, 36, 36);
-    height: 0px;
-}
 
 
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-}
-
-.fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}

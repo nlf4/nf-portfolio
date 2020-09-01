@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSymfony, FaCode } from 'react-icons/fa';
+import { FaCss3Alt, FaHtml5, FaJsSquare, FaNodeJs, FaPhp, FaReact, FaSymfony } from 'react-icons/fa';
 import './App.css';
 import { GrMysql } from "react-icons/gr";
 // import { BiWorld } from "react-icons/bi"
@@ -73,20 +73,20 @@ function App() {
             <div class="project">
 
                 <div class="project-left">
-                    <h2>Colloq App</h2>
+                    <h2>Colloq</h2>
                     <div id="project-icons">
                         <span className="tech-icon-project" id="php-icon"><FaSymfony /></span>
                         <span className="tech-icon-project" id="react-icon"><FaReact /></span>
                         <span className="tech-icon-project" id="mysql-icon"><GrMysql /></span>
                     </div>
                     <p>Colloq is a social networking app for travellers who are also interested in improving a language. After creating a profile, users can search their destination city to find local native speakers and message them to arrange a meet-up.</p>
-                    <a href="https://colloq.surge.sh" target="_blank">Live</a>
-                    <a href="https://github.com/nlf4/colloq-frontend" target="_blank">Code</a>
+                    <a href="https://colloq.surge.sh" target="_blank" rel="noopener noreferrer">Live</a>
+                    <a href="https://github.com/nlf4/colloq-frontend" target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
 
                 <div class="project-right">
 
-                <div>
+                <div class="project-right-inner">
                     <Slide easing="ease" {...properties}>
                     <div className="each-slide">
                         <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
@@ -115,15 +115,15 @@ function App() {
             <div class="project">
 
                 <div id="project-left-two" class="project-left">
-                    <h2>GetFit App</h2>
+                    <h2>GetFit</h2>
                     <div id="project-icons">
                         <span className="tech-icon-project" id="php-icon"><FaPhp /></span>
                         <span className="tech-icon-project" id="mysql-icon"><GrMysql /></span>
                     </div>
                     <p>GetfiT is a fitness web application where users can utilize basic CRUD functions to store, access, update and delete workout exercises.</p>
                     <div class="project-buttons">
-                    <a href="https://wdev.be/wdev_nicole/dag2/login.php" target="_blank">Live</a>
-                    <a href="https://github.com/nlf4/getfit" target="_blank">Code</a>
+                    <a href="https://wdev.be/wdev_nicole/dag2/login.php" target="_blank" rel="noopener noreferrer">Live</a>
+                    <a href="https://github.com/nlf4/getfit" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                     
                 </div>
@@ -158,8 +158,8 @@ function App() {
                     </div>
                     <p>An app which lets users search films and add them to their favorites collection. Built using OMDb API, React Redux and Material-UI.</p>
                     <div class="project-buttons">
-                    <a href="http://movie-search-redux.surge.sh/" target="_blank">Live</a>
-                    <a href="https://github.com/nlf4/redux-movie-liker" target="_blank">Code</a>
+                    <a href="http://movie-search-redux.surge.sh/" target="_blank" rel="noopener noreferrer">Live</a>
+                    <a href="https://github.com/nlf4/redux-movie-liker" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                     
                 </div>
@@ -199,7 +199,7 @@ function App() {
                     {/* <img id="portrait" src="./img/1stand.jpg" alt="Nicole Furtado" /> */}
                         <h1 className="endtext2">About Me</h1>
                         
-                        <p className="endtext2">My name is <span class="color">Nicole</span>, I'm a 29-year-old <span class="color">web developer</span> based in Antwerp. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
+                        <p className="endtext3">My name is <span class="color">Nicole</span>, I'm a 29-year-old <span class="color">web developer</span> based in Antwerp. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
                         
 
                         <ul className="list-unstyled social">
