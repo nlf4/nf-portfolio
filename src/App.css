@@ -15,7 +15,7 @@ body, html {
 }
 
 p#name-header {
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -23,7 +23,7 @@ p#name-header {
     font-size: 1.7rem;
   }
   section#section-dev {
-    padding: 10px;
+    padding: .6rem;
   }
 }
 
@@ -32,13 +32,13 @@ p#name-header {
     font-size: 2rem;
   }
   section#section-dev {
-    padding: 10px;
+    padding: .6rem;
   }
 }
 
 section#section-dev {
     min-height: 400px;
-    padding: 50px;
+    padding: 3.1rem;
 }
 
 /* section backgrounds ***********/
@@ -54,29 +54,23 @@ section#section-dev {
 }
 .pimg1 {
     background-image: url('./img/1stand.jpg');
-    /* min-height: 100%; */
     height: 100vh;
-    display: flex;
-    
+    display: flex;  
 }
 
 .pimg2 {
     background-image: url('./img/bg-1.jpg');
-    min-height: 500px;
-    
+    min-height: 500px; 
 }
 
 .pimg3 {
     background-image: url('./img/bg-2.jpg');
-    min-height: 500px;
-    
+    min-height: 500px; 
 }
 
 .pimg4 {
     background-image: url('./img/black.png');
-    min-height: 100vh;
-    /* border: solid red 1px; */
-    
+    height: 100vh;  
 }
 
 /* sections **********************/
@@ -84,21 +78,19 @@ section#section-dev {
 .section {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 25px;
-    line-height: 35px;
-    padding: 30px 60px;
+    font-size: 1.56rem;
+    line-height: 2.18rem;
+    padding: 1.875rem 60px;
 }
 .section h2 {
     font-family: 'Comfortaa', cursive;
     letter-spacing: .2rem;
     font-size: 2.5rem;
 }
-
 .section-light {
     background-color: #615e66;
     color: rgb(187, 186, 186);
 }
-
 .section-dark {
     background-color: #615e66;
     color: rgb(187, 186, 186);
@@ -146,18 +138,6 @@ section#section-dev {
   filter: grayscale(50%)
 }
 
-/* #css-icon {
-  font-size: 2rem;
-  color: #0274B8;
-  transition: .3s;
-  padding: 15px;
-  filter: grayscale(50%)
-}
-
-#css-icon:hover {
-  transform: scale(1.5);
-  filter: grayscale(0%);
-} */
 
 #css-icon {
   color: #1a89c9;
@@ -205,74 +185,6 @@ section#section-dev {
   }
 }
 
-/* translation section ***********/
-/* .list-translation {
-    margin-top: 0;
-    list-style: none;
-    list-style-position: inside;
-    display: inline-block;
-    text-align: left;
-} */
-
-/* .list-translation li {
-    position: relative;
-    display: block;
-    padding: 10px; */
-    /* animation: fadeIn 0.5s linear;
-    animation-fill-mode: both; */
-/* } */
-
-/* // Set delay per List Item
-@for $i from 1 through $total-items {
-  li:nth-child(#{$i}) {
-    animation-delay: .25s * $i;
-  }
-}
-
-// Keyframe animation
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    top: 100px;
-  }
-  75% {
-    opacity: 0.5;
-    top: 0px;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* .list-translation li::before {
-        content: "✒️";
-        font-weight: bold;
-        display: inline-block; 
-        width: 1.5em; */
-        /* margin-left: -1em; */
-/* } */
-
-/* .list-translation li {
-    font-size: 20px;
-} */
-
-
-/* .endtext {
-  border: white 1px solid;
-    position: absolute;
-    top: 30%;
-    padding-left: 120px;
-    width: 100%;
-    color: rgb(231, 223, 223);
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.endtext:hover {
-    color: #414446;
-    text-decoration: none;
-} */
-
 
 #projects-title, #intro-title {
   font-size: 3.5rem;
@@ -305,7 +217,7 @@ div.project {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   div.project {
   font-size: 1rem;
   margin: 0;
@@ -326,12 +238,22 @@ div.project {
   }
 
   .each-slide {
-    height: 16rem;
-    min-width: 20rem;
+    height: 12rem;
+    min-width: 16rem;
   }
+
+  div.react-slideshow-container {
+    width: 350px;
+  }
+
+  img#movie-search {
+    width: 300px;
+  }
+
+  
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   div.project {
   font-size: 1rem;
   margin: 0;
@@ -345,7 +267,6 @@ div.project {
   padding: 10px 0;
   }
 
-
   .project-right {
     min-width: 50%;
   }
@@ -356,7 +277,7 @@ div.project {
   }
 
   img#movie-search {
-    width: 400px;
+    width: 300px;
   }
 }
 
@@ -457,7 +378,19 @@ div.react-slideshow-container {
 }
 
 img#movie-search {
-  width: 500px;
+  width: 420px;
+}
+
+@media screen and (max-width: 1200px) {
+  div.react-slideshow-container {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  img#movie-search {
+    width: 500px;
+  }
 }
 
 
@@ -528,6 +461,7 @@ span.color {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 20px;;
 }
 
 .endtext-box img#portrait {
@@ -537,12 +471,8 @@ span.color {
   margin-top: 35px;
 }
 
-#contact {
-  
-}
-
 .endtext-box p {
-  width: 80%%;
+  width: 80%;
 }
 
 ul.list-unstyled {
