@@ -41,7 +41,7 @@ function App() {
 
     <section className="section section-light" id="section-dev">
         <h2 id="intro-title">Hey there!</h2>
-        <p>I am a full stack web developer who loves keeping up with the latest <br />frameworks and technologies. Feel free to message me for more details!</p>
+        <p>I am a full-stack web developer who loves keeping up with the latest <br />frameworks and technologies. Feel free to message me for more details!</p>
         <p>I work with:</p>
         <div id="icons">
             
