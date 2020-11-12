@@ -59,12 +59,12 @@ section#section-dev {
 }
 
 .pimg2 {
-    background-image: url('./img/bg-1.jpg');
+    background-image: url('./img/bg-1-comp.jpg');
     min-height: 500px; 
 }
 
 .pimg3 {
-    background-image: url('./img/bg-2.jpg');
+    background-image: url('./img/bg-2-comp.jpg');
     min-height: 500px; 
 }
 
