@@ -194,7 +194,7 @@ function App() {
         <div className="pimg4">
             <div className="endtext-box">
                 <div id="contact">
-                  <img id="portrait" alt="Nicole Furtado" src={require('./img/nf3.jpg')}/>
+                  <img id="portrait" alt="Nicole Furtado" src={require('./img/nfwbg.png')}/>
                   {/* <img id="portrait" alt="Nicole Furtado" src={require('./img/nf3.jpg')}/> */}
                     {/* <img id="portrait" src="./img/1stand.jpg" alt="Nicole Furtado" /> */}
                         <h1 className="endtext2">About Me</h1>
