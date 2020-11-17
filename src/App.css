@@ -70,7 +70,8 @@ section#section-dev {
 
 .pimg4 {
     background-image: url('./img/black.png');
-    height: 100vh;  
+    min-height: 100vh;  
+    overflow: -moz-hidden-unscrollable;
 }
 
 /* sections **********************/
@@ -405,6 +406,7 @@ span.color {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
 }
 
 .endtext-box {
