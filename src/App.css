@@ -114,7 +114,6 @@ section#section-dev {
   padding-top: 1rem; 
 }
 
-
 .tech-icon {
   font-size: 3rem;
   transition: .3s;
@@ -181,11 +180,9 @@ section#section-dev {
   }
 
   #icons {
-    line-height: 80px;
-      
+    line-height: 80px; 
   }
 }
-
 
 #projects-title, #intro-title {
   font-size: 3.5rem;
@@ -197,7 +194,6 @@ section#section-dev {
     font-size: 2.5rem;
   }
 }
-
 
 div.project {
   min-height: 11rem;
@@ -216,8 +212,6 @@ div.project {
 
 /* MEDIA **********************/
 
-
-
 @media screen and (max-width: 500px) {
   div.project {
   font-size: 1rem;
@@ -231,7 +225,6 @@ div.project {
   .section {
   padding: 10px 0;
   }
-
 
   .project-right {
     min-width: 50%;
@@ -250,8 +243,6 @@ div.project {
   img#movie-search {
     width: 300px;
   }
-
-  
 }
 
 @media screen and (max-width: 1250px) {
@@ -281,9 +272,6 @@ div.project {
     width: 300px;
   }
 }
-
-
-
 
 /* END MEDIA ********************/
 
@@ -318,7 +306,6 @@ div.project {
 .project-left a:hover {
   background-color: #a1bde4;
   color: #615e66;
-  
 }
 
 .project-buttons {
@@ -343,7 +330,6 @@ div.project {
   justify-content: center;
   padding: 1.2rem;
 }
-
 
 #projects-div {
   font-size: 1.2rem;
@@ -393,7 +379,6 @@ img#movie-search {
     width: 500px;
   }
 }
-
 
 /* contact section *****************/
 
@@ -446,7 +431,6 @@ span.color {
   margin: .5rem 1rem 1rem 2.5rem;
   text-decoration: none;
   text-align: center;
-
 }
 
 /* MEDIA ************************/
@@ -473,6 +457,7 @@ span.color {
 ul.list-unstyled {
   margin-top: 0;
 }
+
 }
 
 /* social media links *******************/
