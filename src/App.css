@@ -395,65 +395,58 @@ img#movie-search {
 }
 
 
-/* contact section *******************/
+/* contact section *****************/
 
 span.color {
   color: rgb(60, 219, 12);
 }
 
-#contact {
+#contact-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
+  background-color: #323232;
+  height: 1000px;
 }
 
-.endtext-box {
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    width: 38%;
-    background-color: #615e66;
-    opacity: 0.6;
-    color: #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+#contact-box {
+  background-color: #615e66;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 700px;
 }
 
-.endtext-box p {
-    
-    font-size: 1.3rem;
-    color: rgb(250, 246, 246);
-    text-decoration: none;
-    justify-content: center;
-    width: 60%;
-    text-align: center;
-    /* border: solid 1px yellow; */
-    
-}
-.endtext2 {
-    color: rgb(231, 223, 223);
-    font-size: 2rem;
-    margin: .5rem 1rem 1rem 2.5rem;
-    text-decoration: none;
-    text-align: center;
-
+#contact-box p { 
+  font-size: 1.5rem;
+  color: rgb(202, 199, 199);
+  text-decoration: none;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
 }
 
-.endtext-box img#portrait {
-    height: 280px;
-    width: 250px;
-    margin-bottom: 40px;
-    margin-top: 35px;
-    border-radius: 50%;
-    border: 5px solid #333333;
-    opacity: 1;
-    z-index: 999;
+#contact-box img#portrait {
+  height: 280px;
+  width: 250px;
+  margin-bottom: 40px;
+  margin-top: 35px;
+  border-radius: 50%;
+  border: 5px solid #333333;
+  opacity: 1;
+  z-index: 999;
+}
+
+#endtext2 {
+  color: rgb(202, 199, 199);
+  font-size: 2rem;
+  margin: .5rem 1rem 1rem 2.5rem;
+  text-decoration: none;
+  text-align: center;
+
 }
 
 /* MEDIA ************************/
@@ -492,14 +485,14 @@ ul.list-unstyled {
 
 ul.list-unstyled li {
     display: inline;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 0 .2em;
     text-decoration: none;
     margin-right: 15px;
 }
 
 ul.list-unstyled a {
-    color: rgb(231, 223, 223);
+    color: rgb(202, 199, 199);
     transition: all 300ms ease;
 }
 
