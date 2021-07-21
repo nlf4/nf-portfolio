@@ -41,7 +41,7 @@ function App() {
 
     <section className="section section-light" id="section-dev">
         <h2 id="intro-title">Hey there!</h2>
-        <p>I am a front-end web developer who loves keeping up with the latest <br />frameworks and technologies. Feel free to message me for more details!</p>
+        <p>I am a front-end web developer who has a bit of back-end experience and loves keeping up with the latest <br />frameworks and technologies. Feel free to message me for more details!</p>
         <p>I work with:</p>
         <div id="icons">
             
@@ -194,7 +194,7 @@ function App() {
         <div id="contact-box">
             <img id="portrait" alt="Nicole Furtado" src={require('./img/nfwbg.png')}/>
             <h1 id="endtext2">About Me</h1>
-            <p id="endtext3">My name is <span class="color">Nicole</span>, I'm a 30-year-old <span class="color">web developer</span> based in Cleveland, Ohio and Antwerp, Belgium. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
+            <p id="endtext3">My name is <span class="color">Nicole</span>, I'm a 30-year-old <span class="color">web developer</span> based in Cleveland, Ohio. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
             <ul className="list-unstyled social">
                 <li>
                     <a href="https://github.com/nlf4" title="github">
