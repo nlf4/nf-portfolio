@@ -7,19 +7,15 @@ import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 
 function App() {
-
-   
     const slideImages = [
         require('./img/colloq-preview.JPG'),
         require('./img/colloq-inbox.JPG'),
         require('./img/colloq-calendar.JPG')
     ];
-
     const slideImages2 = [
         require('./img/getfit.png'),
         require('./img/options-menu5.jpg'),
     ];
-
     const properties = {
         autoplay: false,
       };
