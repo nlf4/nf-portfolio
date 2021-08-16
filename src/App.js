@@ -141,7 +141,7 @@ function App() {
                 <div id="contact-box">
                     <img id="portrait" alt="Nicole Furtado" src={require('./img/nfwbg.png')}/>
                     <h1 id="endtext2">About Me</h1>
-                    <p id="endtext3">My name is <span class="color">Nicole</span>, I'm a 30-year-old <span class="color">web developer</span> based in Cleveland, Ohio. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
+                    <p id="endtext3">My name is <span class="color">Nicole</span>, I'm a 30-year-old <span class="color">web developer</span> based in Cleveland and Antwerp. Previously a Dutch-to-English translator, I developed a love for <span class="color">JavaScript</span> in 2018, decided to switch careers and haven't looked back. Please <span class="color">contact me</span> with your questions or project ideas!</p>
                     <ul className="list-unstyled social">
                         <li>
                             <a href="https://github.com/nlf4" title="github">
